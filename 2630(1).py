@@ -21,13 +21,15 @@ def Paper(x, y, N):
 
     if len(set(values)) == 1:
         return values[0]
-        
+
     else:
         for value in values:
             if value == WHITE:
                 white += 1
+
             elif value == BLUE:
                 blue += 1
+
         return BAD
 
 n = int(input())
@@ -36,8 +38,10 @@ for i in range(n):
     paper.append(list(map(int, input().split())))
 
 value = Paper(0, 0, n)
+
 if value == WHITE:
     white += 1
+
 elif value == BLUE:
     blue += 1
 
