@@ -20,6 +20,6 @@ n = int(input())
 
 heap_items = []
 for i in range(n):
-    heap_items.append(int(sys.stdin.readline()))
+    heap_items.append(int(sys.stdin.readline())
 
 Max_Heap(heap_items)
