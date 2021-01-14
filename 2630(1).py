@@ -7,7 +7,6 @@ WHITE = 0
 BLUE  = 1
 BAD   = 2
 
-
 def Paper(x, y, N):
     global paper, white, blue
     next_N = N // 2
@@ -22,6 +21,7 @@ def Paper(x, y, N):
 
     if len(set(values)) == 1:
         return values[0]
+        
     else:
         for value in values:
             if value == WHITE:
