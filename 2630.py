@@ -40,13 +40,23 @@ def Paper(x, y, N):
         elif d == 0:
             black += 1
     return 2
+
+def Answer(x, y, N):
+    global white, black
+    
+    if not Paper(x, y, N) == 2:
+        if Paper(x, y, N) == 1:
+            white += 1
+
+        elif Paper(x, y, N) == 0:
+            black += 1
     
 n = int(input())
 
 for i in range(n):
     paper.append(list(map(int, input().split())))
 
-Paper(0, 0, n)
+Answer(0, 0, n)
 
 print(black)
 print(white)
